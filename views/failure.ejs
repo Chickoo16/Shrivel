@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>404</title>
+</head>
+<body>
+    <div class="failurePage jumbotron jumbotron-fluid">
+        <div class="insideFailure">
+            <h1 class="display-1">
+                Something went wrong !
+            </h1>
+            <h4 class="display-4">
+                Following are the possibilites : 
+            </h4>
+            <ul>
+                <li>You entered a wrong city.</li>
+                <li>The entered city is not in our list.</li>
+                <li>Server is too busy.</li>
+            </ul>
+            <form action="/failure" method="POST">
+                <button class="failureButton btn btn-warning">Try again</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

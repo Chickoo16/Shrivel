@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Crimson+Text:wght@600&display=swap" rel="stylesheet">    <link rel="stylesheet" href="public/css/styles.css">  
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="shortcut icon" type="image/png" href="images/snow.png" />
+    
+    <title> Shrivel </title>
+</head>
+<body style="background-color: #fafafa;">
+    <div id="jumbotron-heading" class="jumbotron jumbotron-fluid" style="background-image: url(images/weather.jpg);">
+       <h1 id="heading" class="text-center font-weight-bold display-1">
+            Shrivel 
+            <img src="images/snowflake.png" class="snowflake-img" alt="">
+        </h1>
+        <div class="container">
+          <h1 class="know-your-weather text-center font-weight-normal" style="color: #f5f5f5;">
+            Know your city's weather</h1>
+          <br>
+          <div class="text-center">
+            <form action="/check" method="POST">
+                <input type="text" name="city" id="input" class=" form-control text-center font-weight-normal"  style="color: #184d47;" required autofocus>
+                <button class="btn btn-success text-center" type="submit">Check</button>
+            </form>
+          </div>
+        </div>     
+     </div>
+
+     <div class="container-fluid footer row">
+      <div class="col-6">
+        <p class="display-5 created-by font-weight-bold" style="color:#047845;">Created by :
+          <span class="font-weight-normal" style="color: black;">Chandan kumar</span>
+         </p>
+         <h5 class="display-5">About</h5>
+         <p>I'm currently a computer science engineering undergraduate. I always intend to learn something new 
+           and hone my existing skills. There are much more intresting things to come, so
+           subscribe to my newsletter to stay connected. <br><br>
+           <form action="/subscribe" method="POST">
+            <button class="btn btn-outline-primary btn-sm" type="submit">Subscribe</button>
+          </form>
+           <br><br>
+           <a href="https://www.facebook.com/atharvsingh1604">
+            <img class="facebook" src="images/facebook.png" alt="">
+          </a>
+          <a href="https://twitter.com/Chandan60792432">
+            <img class="twitter" src="images/twitter.png" alt="">
+          </a>
+           <a href="https://instagram.com/chickoo_?igshid=1qmh9dmpabu9z">
+            <img class="instagram" src="images/instagram.png" alt="">
+           </a>
+           <a href="https://github.com/Chickoo16">
+            <img class="github" src="images/github.png" alt="">
+          </a>
+         </p>
+         <p>&copy; Atharv Inc</p>
+      </div>
+     </div>
+
+
+</body>
+</html>

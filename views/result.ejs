@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">   
+    <title>result</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="image-container">
+         <img class="image" src="<%= data.Icon%>" alt="">
+        </div>
+        <div class="data">
+            <div>
+                <h1 id="cityName" class="display-1">
+                    <%= data.CityName%>
+                </h1>
+                <p id="location" class="display-4"> 
+                    longitude : <%= data.Longitude%>, lattitude : <%= data.Lattitude%>
+                </p>
+            </div>
+            <div>
+                <h4 id="weather" class="display-4">
+                    Weather: <span class="description"><%= data.description%></span>
+                </h4><br>
+                <h5 id="temperature" class="display-4">
+                    Temperature : <%= data.temperature%> <em>degree celcius</em>
+                </h5>
+                <p id="feelsLike">
+                    feels like : <%= data.FeelsLike%> <em> degree celcius</em>
+                </p>
+                <h5 id="otherData" class="display-4">
+                    <span id="pressure">
+                        Pressure : <%= data.Pressure%> <em>hPa</em><br>
+                    </span>
+                    <span id="humidity">
+                        Humidity : <%= data.Humidity%> <em>%</em><br>
+                    </span>
+                    <span id="visibility">
+                        Visibility : <%= data.Visibility%> meters <br>
+                    </span>
+                    <span id="windSpeed">
+                        Wind speed : <%= data.WindSpeed%> <em>m/s</em> <br>
+                    </span>
+                    <!--Wind direction : <%= data.WindDirection%> <em>degrees</em> <br>-->
+                    <span id="cloudPercentage">
+                        Cloud percentage : <%= data.CloudPercentage%> <em>%</em> <br>
+                    </span>
+                    <span id="sunrise">
+                        Time for sunrise : <%= data.SunRise%> <br>
+                    </span>
+                    <span id="sunset">
+                        Time for sunset : <%= data.SunSet%>
+                    </span>
+                </h5>
+            </div>
+        </div>
+
+        <div id="home">
+            <form action="/redirect" method="POST">
+                <button class="btn btn-dark text-center" type="submit">Go to home page</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
